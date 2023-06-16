@@ -41,7 +41,7 @@ connect(); // Call the connect function to establish the database connection
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "../client/build"))); // Adjusted the path to the client build folder
+app.use(express.static(path.join(__dirname, "/public"))); // Adjusted the path to the client build folder
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
@@ -52,7 +52,7 @@ app.use("/api/v1/reviews", reviewRoute); // Adjusted the route path for reviews
 app.use("/api/v1/bookings", bookingRoute); // Adjusted the route path for bookings
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html")); // Adjusted the path to the client build index.html
+  res.sendFile(path.join(__dirname, "/public/index.html")); // Adjusted the path to the client build index.html
 });
 
 const PORT = process.env.PORT || 3000;
