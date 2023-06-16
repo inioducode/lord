@@ -35,25 +35,28 @@ const connect = async () => {
   }
 };
 
+connect(); // Call the connect function to establish the database connection
+
 // Middleware
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../client/build"))); // Adjusted the path to the client build folder
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/tours", tourRoute);
 app.use("/api/v1/users", userRoute);
-app.use("/api/v1/review", reviewRoute);
-app.use("/api/v1/booking", bookingRoute);
+app.use("/api/v1/reviews", reviewRoute); // Adjusted the route path for reviews
+app.use("/api/v1/bookings", bookingRoute); // Adjusted the route path for bookings
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "../client/build/index.html")); // Adjusted the path to the client build index.html
 });
 
-app.listen(port, () => {
-  connect();
-  console.log("Server listening on port", port);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log("Listening for requests");
 });
