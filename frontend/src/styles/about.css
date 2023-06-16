@@ -1,0 +1,284 @@
+section{
+  display: flex;
+  justify-content: center;
+  
+}
+.first__page {
+  display: flex;
+  flex-direction: row !important;
+  gap: 0;
+  width: 100%;
+}
+.picsf {
+  background-image: url(../assets/images/fr.jpg) !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 80rem;
+  width: 100%;
+  height: 70vh;
+  
+
+}
+
+.textf{
+  width: 100%;
+}
+
+.row {
+  padding: 0%;
+}
+
+.foundersname {
+  background-color: var(--heading-color);
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.FAQ {
+  padding: 7rem 20rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.FAQ h2 {
+  align-self: center;
+  color: #fab005;
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#line {
+  height: 2px;
+  background-color: var(--heading-color);
+  border: none;
+}
+
+span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.foundersname h3 {
+  writing-mode: vertical-lr;
+  color: rgb(158, 158, 158);
+  padding: 3rem;
+}
+
+.foundersname h1 {
+  font-size: 8rem;
+  line-height: 6rem;
+  color: rgb(158, 158, 158);
+  transform: translateX(50%);
+}
+
+.yellowbox {
+  background-color: #fab005;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -10%;
+  display: flex;
+}
+
+.yellow__text {
+  padding: 1rem;
+}
+
+.b1 {
+  border-right: 0.1rem solid var(--heading-color);
+  height: 100%;
+  padding: 2rem;
+  width: 50%;
+}
+
+.b2 {
+  height: 100%;
+  padding: 2rem;
+  width: 50%;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1202px) {
+  .FAQ {
+    display: flex;
+    padding: 2rem;
+  }
+  .picsf {
+    background-image: url(../assets/images/fr.jpg) !important;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 80rem;
+    width: 50%;
+    height: 70vh;
+    
+  
+  }
+
+  .textf{
+    width: 50%;
+  }
+  
+
+
+
+}
+
+@media screen and (max-width: 997px) {
+  .foundersname h1 {
+    font-size: 
+    7rem;
+    line-height: 5rem;
+    color: rgb(158, 158, 158);
+    transform: translateX(30%);
+  }
+
+
+}
+
+@media screen and (max-width: 997px) {
+
+  .yellowbox{
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+
+  }
+  .foundersname h1 {
+    font-size: 
+    6rem;
+    line-height: 5rem;
+    color: rgb(158, 158, 158);
+    transform: translateX(30%);
+  }
+
+  
+}
+@media screen and (max-width: 768px) {
+  .box {
+    flex-direction: column;
+  }
+  .picsf {
+    background-image: url(../assets/images/fr.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    width: 100%;
+    height: 20rem;
+ background-position: 0 0;
+    
+  
+  }
+
+  .title h1 {
+    font-size: 
+    2rem;
+    line-height: 1rem;
+    color: rgb(158, 158, 158);
+    transform: translateX(30%);
+  }
+
+  .textf{
+    width: 100%;
+  }
+
+  .first__page{
+    flex-direction: column !important;
+    height: 30rem;
+  }
+  
+ 
+
+  .foundersname {
+    height: auto;
+  }
+
+  .foundersname h3 {
+    writing-mode: horizontal-tb;
+    padding: 1.5rem;
+  }
+
+ 
+
+  .yellowbox {
+    flex-direction: column;
+    top: -5%;
+  }
+
+  .b1,
+  .b2 {
+    width: 100%;
+  }
+
+  .FAQ {
+    padding: 3rem;
+  }
+  .Name h3{
+    padding: 0%;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .FAQ {
+    padding: 2rem;
+  }
+.foundersname{
+  display: flex;
+  padding: 1rem;
+  align-content: center;
+  align-items: center;
+  justify-items: center;gap: .1rem !important;
+
+}
+
+.Name h3{
+  padding: 0%;
+  font-size:  1.3rem;
+}
+  .title h1 {
+    font-size: 
+    1.3rem;
+    line-height: .4rem;
+    color: rgb(158, 158, 158);
+    transform: translateX(30%);
+  }
+}
+
+@media screen and (max-width: 337px) {
+  .FAQ {
+    padding: 1rem;
+  }
+
+  .th{
+
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+  }
+.foundersname{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-items: center;gap: .1rem !important;
+
+}
+  .title h1 {
+    font-size: 
+    1rem;
+    line-height: .2rem;
+    color: rgb(158, 158, 158);
+    transform: translateX(30%);
+  }}
+
+  .Name h3{
+    padding: 0%;
+    font-size: 1rem;
+  }

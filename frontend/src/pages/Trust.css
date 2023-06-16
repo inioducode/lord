@@ -1,0 +1,27 @@
+.containert{
+    display: flex;
+    background-color: blue  !important ;
+    height: 40%;
+    flex-wrap: wrap;
+  
+
+}
+.childt{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    background-color: aqua !important;
+    align-items: center;
+    justify-items: center;
+}
+.logot{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
