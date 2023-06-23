@@ -11,6 +11,7 @@ import userRoute from "./routes/users.js";
 import authRoute from "./routes/auth.js";
 import reviewRoute from "./routes/reviews.js";
 import bookingRoute from "./routes/bookings.js";
+import testimonialRoute from "./routes/testimonial.js"
 
 dotenv.config();
 const app = express();
