@@ -50,6 +50,7 @@ app.use("/api/v1/tours", tourRoute);
 app.use("/api/v1/users", userRoute);
 app.use("/api/v1/reviews", reviewRoute); // Adjusted the route path for reviews
 app.use("/api/v1/bookings", bookingRoute); // Adjusted the route path for bookings
+app.use("/api/v1/testimonials", testimonialRoute);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "/build/index.html")); // Adjusted the path to the client build index.html
